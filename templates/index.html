@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
-    <link rel="shortcut icon" href="{{url_for('static',filename='img/favicon.ico')}}"/>
+    <title>Photography shop</title>
+    <!--CSS STYLESHEET-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--BOX ICONS-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!--REMIXICONS-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="banner">
-    <img src="static/img/background.jpg" alt = banner style="width: 100%;">
-    <div class="fadingtext">
-        <div class="centertext">For Your Lens Only.</div>
-    </div>
-
+    <header>
+        <a href="/">FYLO</a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Products</a></li>
+            <li><a href="/"></a>Development</li>
+            <li><a href="/"></a>Getting Started</li>
+            <li><a href="/"></a>About Us</li>
+            <li><a href="/"></a>Contact</li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <!--JAVASCRIPT-->
+    <script src="script.js"></script>
 </body>
 </html>
