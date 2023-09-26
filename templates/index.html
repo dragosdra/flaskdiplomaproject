@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography shop</title>
+    <title>Home</title>
     <!--CSS STYLESHEET-->
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
     <!--BOX ICONS-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!--REMIXICONS-->
@@ -18,18 +18,33 @@
 </head>
 <body>
     <header>
-        <a href="/">FYLO</a>
-        <ul>
+        <a href="/" class="logo"><i class="ri-camera-lens-fill"></i></a>
+        <ul class="navlist">
             <li><a href="/">Home</a></li>
-            <li><a href="/">Products</a></li>
-            <li><a href="/"></a>Development</li>
-            <li><a href="/"></a>Getting Started</li>
-            <li><a href="/"></a>About Us</li>
-            <li><a href="/"></a>Contact</li>
+            <li><a href="products">Products</a></li>
+            <li><a href="darkroom">Darkroom</a></li>
+            <li><a href="gettingstarted">Getting Started</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon"></div>
     </header>
+    <section class="landing">
+        <div class="landing-text">
+            <h1>For Your Lens Only.</h1>
+            <h2>Analog and digital photography gear.</h5>
+            <h3>For Photographers.By Photographers.</h3>
+            <p>From film stocks,camera bodies,lenses,tripods and more.<br> For your digital
+                and analog needs
+            </p>
+        </div>
+    </section>
+    <div class="icons"> 
+        <a href="/"><i class="ri-instagram-line"></i></a>
+        <a href="/"><i class="ri-youtube-line"></i></a>
+        <a href="/"><i class="ri-behance-fill"></i></a>
+    </div>
     <!--JAVASCRIPT-->
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>
