@@ -168,5 +168,48 @@ section{
 }
 .menu__item:hover {
   background-color: #CFD8DC;
+  color: #050505;
 }
+footer{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 20px;
+  background: #333;
+  color: white;
+  font-family: sans-serif;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-bottom{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
 
+}
+.socials li{
+  margin: 0  15px ;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials i{
+  font-size: 30px;
+}
+.socials  a:hover i{
+  color: #050505;
+  transition-duration: .25s;
+}
