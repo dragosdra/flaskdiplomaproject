@@ -1,12 +1,14 @@
 *{ padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif;;
-    list-style: none;
-    text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Condensed', sans-serif;;
+  list-style: none;
+  text-decoration: none;
 }
-body{background-image: url(/static/img/background.jpg);
-}
+body{background-image: url(/static/img/privatedarkroom-scaled.jpg);
+max-width: auto;
+max-height: auto;
+overflow: scroll;}
 header{
   position: fixed;
   right: 0;
@@ -55,7 +57,7 @@ section{
     background: none;
     display: list-item;
     position: relative; 
-    left: 15px;
+    left: 330px;
     top: -30px;
     color: white;
     font-size: 20px;
@@ -170,45 +172,45 @@ section{
   color: #050505;
 }
 footer{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  top: 20px;
-  background: #333;
-  color: white;
-  font-family: sans-serif;
-}
-.footer-content{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-.footer-bottom{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.socials{
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem 0 3rem 0;
-
-}
-.socials li{
-  margin: 0  15px ;
-}
-.socials a{
-  text-decoration: none;
-  color: #fff;
-}
-.socials i{
-  font-size: 30px;
-}
-.socials  a:hover i{
-  color: #050505;
-  transition-duration: .25s;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    top: 20px;
+    background: #333;
+    color: white;
+    font-family: sans-serif;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-bottom{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+  
+  }
+  .socials li{
+    margin: 0  15px ;
+  }
+  .socials a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .socials i{
+    font-size: 30px;
+  }
+  .socials  a:hover i{
+    color: #050505;
+    transition-duration: .25s;
+  }
