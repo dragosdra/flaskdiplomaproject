@@ -19,7 +19,7 @@ header{
   .logo{
       font-size: 50px;
       font-weight: 700;
-      color: white;
+      color: black;
   }
   .navlist{
       display: flex;
@@ -74,7 +74,7 @@ header{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color:white;
+  background-color:black;
   transition-duration: .25s;
 }
 .menu__btn > span::before {
@@ -110,7 +110,7 @@ header{
   transition-duration: .25s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: white;
   color: #050505;
 }
   #menu-icon{
@@ -123,7 +123,7 @@ header{
 
 .product{
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.1);
-    color: #ffff;
+    color: black;
 }
 .main_container{
     display: grid;
@@ -135,7 +135,7 @@ body{
     width: 100%;
     padding: 120px;
 }
-body{background-image: url(/static/img/background.jpg);}
+body{background-color:white}
 a{text-decoration: none;
-color: #ffff;
+color: black ;
 }

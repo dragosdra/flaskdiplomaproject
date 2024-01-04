@@ -5,7 +5,7 @@
     list-style: none;
     text-decoration: none;
 }
-body{background-image: url(/static/img/background.jpg);
+body{background-color: white;
 }
 header{
   position: fixed;
@@ -22,13 +22,13 @@ header{
 .logo{
     font-size: 50px;
     font-weight: 700;
-    color: white;
+    color: black;
 }
 .navlist{
     display: flex;
 }
 .navlist a{
-    color: white;
+    color: black;
     margin-left: 60px;
     font-size: 20px;
     font-weight: 600;
@@ -36,10 +36,10 @@ header{
     transition: all .55s ease;
 }
 .navlist a:hover{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid black;
 }
 #menu-icon{
-    color: #ffff;
+    color: black;
     font-size: 30px;
     z-index: 10001;
     cursor: pointer;
@@ -57,7 +57,7 @@ section{
     position: relative; 
     left: 15px;
     top: -30px;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: 400;
 }
@@ -84,7 +84,7 @@ section{
     display: block;
     margin: 20px 0;
     font-size: 24px;
-    color: white;
+    color: Black;
     transition: all .50s ease;
 }
 .icons i:hover{
@@ -94,8 +94,8 @@ section{
 .container {
     display: inline-block;
     cursor: pointer;
+    color: black;
   }
- 
 
 #menu__toggle {
   opacity: 0;
@@ -122,6 +122,7 @@ section{
   height: 26px;
   cursor: pointer;
   z-index: 1;
+  color: black;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -130,8 +131,9 @@ section{
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color:white;
+  background-color:black;
   transition-duration: .25s;
+  color: white;
 }
 .menu__btn > span::before {
   content: '';
@@ -166,7 +168,7 @@ section{
   transition-duration: .25s;
 }
 .menu__item:hover {
-  background-color: #CFD8DC;
+  background-color: white;
   color: #050505;
 }
 footer{
