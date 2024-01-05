@@ -3,20 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    {% block head %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    {% endblock %}
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
+    <title>Darkroom</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!--CSS STYLESHEET-->
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
     <!--BOX ICONS-->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <!--REMIXICONS-->
@@ -26,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    {% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
 </head>
 <body>
     <header>
@@ -39,18 +32,31 @@
         <ul class="menu__box">
             <li><a class="menu__item" href="/">Home</a></li>
             <li><a class="menu__item" href="products">Products</a></li>
-            <li><a class="menu__item" href="#">Contact</a></li>
+            <li><a class="menu__item" href="darkroom">Darkroom</a></li>
+            <li><a class="menu__item" href="contact">Contact</a></li>
         </ul>
     </div>
     </header>
-    
-    <section class="landing">
-        <div class="landing-text">
-            <h1>Contact Us:</h1>
-            <h2>Email: service@foryourlensonly.com</h2>
-            <h2>Phone Number (US): 1-800-FYLONLY</h2>
-            <h2>You can also find us on X,Instagram and Facebook @ForYourLensOnly</h2>
+    <div class="product-container">
+        <div class="product-image">
+            <img src="static/img/scannersmall.jpg" alt="Product Image">
         </div>
-    </section>
+        <div class="product-details">
+            <h1>Darkroom Services</h1>
+            <p>Scanning and Development </p>
+            <p><strong>Price:</strong> Varies on Film </p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-description">
+        <h2>Description</h2>
+        <p>Film Development using high quality Kodak and Ilford Chemistry. Scanning done with Fuji Frontier SP3000</p>
+        <ul>
+            <li>Film Sizes: 35mm and 120 </li>
+            <li>Film Type: BW,ECN-2,C41</li>
+            <li>Pushing and Pulling:Normal Development,Pull 1 or 2 stops,Push 1 or 2 Stops</li>
+        </ul>
+    </div>
 </body>
 </html>

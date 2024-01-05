@@ -214,3 +214,26 @@ footer{
   color: #050505;
   transition-duration: .25s;
 }
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.product-image {
+max-width: 40%;
+max-height: 50%;
+margin-left: 200px;
+margin-top: 100px;
+}
+
+.product-details {
+    max-width: 25%;
+    margin-right: 300px;
+    margin-top: 50px;
+}
+.product-description{
+    margin-bottom: 50px;
+}
