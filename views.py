@@ -54,9 +54,7 @@ def contact():
 @views.route("/signup")
 def register():
     return render_template("signup.html")
-@views.route("/login", methods=["POST","GET"])
-def login():
-    return render_template("login.html")
+
 
 
 
