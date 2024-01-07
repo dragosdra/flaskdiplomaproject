@@ -1,48 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!--CSS STYLESHEET-->
-    <link rel="stylesheet" type="text/css" href="/static/productstyle.css">
-    <!--BOX ICONS-->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <!--REMIXICONS-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-</head>
-<body>
-    <header>
-        <a href="/" class="logo"><i class="ri-camera-lens-fill"></i></a>
-    <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-        <span></span>
-        </label>
-
-        <ul class="menu__box">
-            <li><a class="menu__item" href="/">Home</a></li>
-            <li><a class="menu__item" href="/products">Products</a></li>
-            <li><a class="menu__item" href="darkroom">Darkroom</a></li>
-            <li><a class="menu__item" href="/contact">Contact</a></li>
-            <li><a class="menu__item" href="login">Log In</a></li>
-            <li><a class="menu__item" href="signup">Sign Up</a></li>
-        </ul>
-    </div>
-    </header>
+{% extends "base.html" %}
+{% block title %}Products{% endblock %}
+{% block content %}
      <div class="main_container">
         <div class="product">
             <img src="/static/img/products/Cameras/ae1pbody.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Canon AE-1 Program</h3></a>
+                <a href="/canonae1program"><h3>Canon AE-1 Program</h3></a>
                 <p>$140.00</p>
             </div>
         </div>
@@ -51,15 +14,15 @@
         <div class="product">
             <img href ="#" src="/static/img/products/Cameras/contaxt2.jpg" alt="">
             <div class="product_desc">
-                <a href="#"><h3>Contax T2</h3></a>
+                <a href="/contaxt2"><h3>Contax T2</h3></a>
                 <p>$75.00</p>
             </div>
         </div>
         <div class="main_container">
             <div class="product">
-                <img href="/" src="/static/img/products/Cameras/xpan.jpg" alt="">
+                <img src="/static/img/products/Cameras/xpan.jpg" alt="">
                 <div class="product_desc">
-                    <a href="/"><h3>Hasselblad XPAN</h3></a>
+                    <a href="/xpan"><h3>Hasselblad XPAN</h3></a>
                     <p>$3750.00</p>
                 </div>
             </div>
@@ -68,7 +31,7 @@
         <div class="product">
             <img src="/static/img/products/Cameras/mamiya7.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Mamiya 7</h3></a>
+                <a href="/mamiya7"><h3>Mamiya 7</h3></a>
                 <p>$750.00</p>
             </div>
         </div>
@@ -77,7 +40,7 @@
         <div class="product">
             <img src="/static/img/products/Cameras/pentax67.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Pentax 6X7</h3></a>
+                <a href="/pentax6x7"><h3>Pentax 6X7</h3></a>
                 <p>$550.00</p>
             </div>
         </div>
@@ -86,7 +49,7 @@
         <div class="product">
             <img src="/static/img/products/Film/HP5+.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Ilford HP5+</h3></a>
+                <a href="/ilfordhp5"><h3>Ilford HP5+</h3></a>
                 <p>$7.00</p>
             </div>
         </div>
@@ -95,7 +58,7 @@
         <div class="product">
             <img src="/static/img/products/Film/XP2super.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Ilford XP2 Super</h3></a>
+                <a href="/ilfordxp2"><h3>Ilford XP2 Super</h3></a>
                 <p>$7.00</p>
             </div>
         </div>
@@ -104,7 +67,7 @@
         <div class="product">
             <img src="/static/img/products/Film/50D.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Vision3 50D (400ft reel)</h3></a>
+                <a href="/vision350d"><h3>Vision3 50D (400ft reel)</h3></a>
                 <p>$325.00</p>
             </div>
         </div>
@@ -113,7 +76,7 @@
         <div class="product">
             <img src="/static/img/products/Film/250D.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Vision3 250D (400ft reel)</h3></a>
+                <a href="/vision3250d"><h3>Vision3 250D (400ft reel)</h3></a>
                 <p>$325.00</p>
             </div>
         </div>
@@ -122,7 +85,7 @@
         <div class="product">
             <img src="/static/img/products/Film/200T.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Vision3 200T (400ft reel)</h3></a>
+                <a href="/vision3200t"><h3>Vision3 200T (400ft reel)</h3></a>
                 <p>$325.00</p>
             </div>
         </div>
@@ -131,7 +94,7 @@
         <div class="product">
             <img src="/static/img/products/Film/500T.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Vision3 500T (400ft reel)</h3></a>
+                <a href="/vision3500t"><h3>Vision3 500T (400ft reel)</h3></a>
                 <p>$325.00</p>
             </div>
         </div>
@@ -140,19 +103,9 @@
         <div class="product">
             <img src="/static/img/products/Film/gold200.jpg" alt="">
             <div class="product_desc">
-                <a href="/"><h3>Kodak Gold 200</h3></a>
+                <a href="/kodakgold200"><h3>Kodak Gold 200</h3></a>
                 <p>$9.00</p>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-    <!--JAVASCRIPT-->
-    <script src="/static/script.js"></script>
-</body>
-</html>
+{% endblock %}

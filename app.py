@@ -1,6 +1,5 @@
-from  flask import Flask, request, render_template, redirect, url_for
+from  flask import Flask
 from views import views
-from flask_sqlalchemy import SQLAlchemy
 
 
 app = Flask(__name__,template_folder="templates", static_folder="static")
