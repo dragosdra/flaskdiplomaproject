@@ -15,3 +15,12 @@ def darkroom():
 @views.route("/contact")
 def contact():
     return render_template("contact.html")
+@views.route("/signup")
+def register():
+    return render_template("signup.html")
+@views.route("/login")
+def login():
+    return render_template("login.html")
+
+
+
